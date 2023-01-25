@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:background="@drawable/component_background"
+    android:clickable="true"
+    android:longClickable="true"
+    android:padding="@dimen/_15sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="10dp">
+
+    <!-- TODO Fix The Folder Problem-->
+
+    <TextView
+        android:id="@+id/usedCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QNB Debit Card"
+        android:textColor="?defaultTextColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10$"
+        android:textColor="?defaultButtonColor"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28.12.2022 - 11.59"
+        android:textColor="?defaultTextColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

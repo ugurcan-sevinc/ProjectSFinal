@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="defaultThemeBackground" format="color"/>
+    <attr name="defaultLayoutBackground" format="color"/>
+    <attr name="defaultTextColor" format="color"/>
+    <attr name="defaultIconColor" format="color"/>
+    <attr name="defaultButtonColor" format="color"/>
+    <attr name="defaultSliderBackground" format="color"/>
+    <attr name="defaultDividerColor" format="color"/>
+</resources>

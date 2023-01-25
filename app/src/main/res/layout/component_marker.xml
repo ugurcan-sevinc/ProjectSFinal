@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/driveLayout"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_80sdp"
+    android:background="@drawable/component_background"
+    android:clickable="true"
+    android:longClickable="true"
+    android:padding="@dimen/_5sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="10dp">
+
+    <ImageView
+        android:id="@+id/scImg"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/icon_scooter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scooter ID"
+        android:textColor="?defaultTextColor"
+        android:textSize="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/scImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:text="Battery:"
+        android:textColor="?defaultTextColor"
+        android:textSize="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/scImg"
+        app:layout_constraintTop_toBottomOf="@+id/scID" />
+
+    <TextView
+        android:id="@+id/percentageBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="%99"
+        android:textColor="?defaultTextColor"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toEndOf="@id/textBattery"
+        app:layout_constraintTop_toBottomOf="@+id/scID"/>
+
+    <Button
+        android:id="@+id/driveBtn"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:text="DRIVE"
+        android:textSize="@dimen/_6sdp"
+        android:theme="@style/buttonTheme"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scImg"
+        app:layout_constraintTop_toBottomOf="@+id/textBattery" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

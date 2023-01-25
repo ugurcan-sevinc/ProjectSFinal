@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.ProjectSFinal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/darkThemeColor</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="defaultThemeBackground">@color/darkThemeColor</item>
+        <item name="defaultLayoutBackground">@color/darkLayoutColor</item>
+        <item name="defaultTextColor">@color/lightTextColor</item>
+        <item name="defaultIconColor">@color/lightIconColor</item>
+        <item name="defaultButtonColor">@color/darkButtonColor</item>
+        <item name="defaultSliderBackground">@color/darkSliderColor</item>
+        <item name="defaultDividerColor">@color/darkDividerColor</item>
+
+    </style>
+
+    <style name="buttonTheme">
+        <item name="colorPrimary">@color/darkButtonColor</item>
+    </style>
+
+    <style name="balanceButtonTheme">
+        <item name="colorPrimary">@color/darkLayoutColor</item>
+    </style>
+</resources>

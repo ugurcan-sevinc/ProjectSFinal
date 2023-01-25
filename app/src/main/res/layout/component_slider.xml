@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginBottom="@dimen/_30sdp"
+    android:elevation="10dp"
+    android:background="@drawable/slider_background"
+    android:layout_marginHorizontal="@dimen/_30sdp"
+    android:clipToOutline="true">
+
+    <ImageView
+        android:clickable="true"
+        android:src="@drawable/icon_scooter"
+        android:id="@+id/settingsButton"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:layout_alignSelf="center"
+        android:onClick="historyClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:elevation="20dp"
+        />
+
+    <ImageView
+        android:clickable="true"
+        android:src="@drawable/icon_map"
+        android:id="@+id/mapButton"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:onClick="mapClicked"
+        app:layout_constraintStart_toEndOf="@id/settingsButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/walletButton"
+        android:elevation="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/slider"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/settingsButton"
+        app:layout_constraintEnd_toStartOf="@id/walletButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/slider_background"
+        android:elevation="10dp"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:clickable="true"
+        android:src="@drawable/icon_wallet"
+        android:id="@+id/walletButton"
+        android:onClick="walletClicked"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:layout_alignSelf="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:elevation="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

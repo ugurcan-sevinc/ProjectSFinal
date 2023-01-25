@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="darkThemeColor">#FF212121</color>
+    <color name="lightThemeColor">#FFEEEEEE</color>
+
+    <color name="darkLayoutColor">#FF313131</color>
+    <color name="lightLayoutColor">#FFFFFFFF</color>
+
+    <color name="darkTextColor">#FF111111</color>
+    <color name="lightTextColor">#FFDDDDDD</color>
+
+    <color name="darkIconColor">#FF111111</color>
+    <color name="lightIconColor">#FFDDDDDD</color>
+
+    <color name="darkButtonColor">#FFF8A000</color>
+    <color name="lightButtonColor">#FFF8A000</color>
+
+    <color name="gradientTextColor">#FF00DD00</color>
+
+    <color name="darkSliderColor">#FF313131</color>
+    <color name="lightSliderColor">#FFFFFFFF</color>
+
+    <color name="darkDividerColor">#FF616161</color>
+    <color name="lightDividerColor">#FFBBBBBB</color>
+
+    <color name="backgroundHalfTrans">#40000000</color>
+</resources>

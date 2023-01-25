@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjectS Final</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_key">...</string>
+
+
+    <!-- AUTO ADD -->
+    <string name="autoAddEn">Enabled</string>
+    <string name="autoAddDis">Disabled</string>
+    <string name="autoAddBtn">Understood</string>
+    <string name="autoAddInfo">The automatic refill feature automatically refills your balance when it falls below $10.</string>
+
+
+</resources>

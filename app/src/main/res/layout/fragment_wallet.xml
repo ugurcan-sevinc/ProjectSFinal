@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/component_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/balanceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:elevation="5dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/component_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/walletBalanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wallet Balance"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="?defaultTextColor"
+                    android:textAllCaps="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dollarSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="?defaultButtonColor"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/usersBalanceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="?defaultButtonColor"
+                        android:textAllCaps="true" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addBalanceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Add"
+                android:textColor="@color/darkTextColor"
+                android:theme="@style/buttonTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Alttaki Constraintler -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:id="@+id/autoAddBalanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/walletBalanceLayout"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto Add Balance"
+                android:textColor="?defaultTextColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/autoAddBalanceIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disabled"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="?defaultButtonColor"
+                app:layout_constraintEnd_toStartOf="@id/autoAddBalanceArrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/autoAddBalanceArrow"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_arrowforward"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            app:dividerColor="?defaultDividerColor"
+            app:layout_constraintBottom_toTopOf="@id/autoAddBalanceLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/balanceHistoryLayout"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/autoAddBalanceLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance History"
+                android:textColor="?defaultTextColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/balanceHistory"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_arrowforward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            app:dividerColor="?defaultDividerColor"
+            app:layout_constraintBottom_toBottomOf="@id/autoAddBalanceLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Kayıtlı Kartlar -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:background="@drawable/component_background"
+        android:elevation="5dp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/addCardBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balanceLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cardsView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/addCardBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Add New Card"
+        android:textColor="@color/darkTextColor"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:theme="@style/buttonTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
